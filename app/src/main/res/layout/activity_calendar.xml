@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".CalendarActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="30dp">
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/logout"
+                android:drawablePadding="10dp"
+                android:text="Logout"
+                android:textColor="#858585"
+                tools:text="Logout" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottieImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Current Date will display here"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <cn.iwgang.countdownview.CountdownView
+                android:id="@+id/mycountdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:elevation="8dp"
+                app:isHideTimeBackground="false"
+                app:isShowDay="true"
+                app:isShowHour="false"
+                app:isShowMillisecond="false"
+                app:isShowMinute="false"
+                app:isShowSecond="false"
+                app:isTimeTextBold="true"
+                app:suffixDay="days left"
+                app:suffixGravity="center"
+                app:suffixHour="h"
+                app:suffixMillisecond="ms"
+                app:suffixMinute="m"
+                app:suffixSecond="s"
+                app:suffixTextColor="#000000"
+                app:suffixTextSize="16sp"
+                app:timeBgColor="@color/blue"
+                app:timeTextColor="#FFFFFF"
+                app:timeTextSize="55sp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:srcCompat="@drawable/time" />
+
+            <TextView
+                android:id="@+id/tvWhat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:drawableRight="@drawable/next"
+                android:text="What should I do?"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvSupport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:clickable="true"
+                android:drawableRight="@drawable/next"
+                android:text="Support Messages for Today"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+
+            <Button
+                android:id="@+id/btnReport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btn_bg"
+                android:text="Report Symptoms"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/btnChat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btn_bg"
+                android:text="Chat"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>

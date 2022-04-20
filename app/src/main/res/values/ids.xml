@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="etOtherSymptoms" type="id" />
+    <item name="constraintLayout" type="id" />
+    <item name="btnSaveReport" type="id" />
+    <item name="cbCough" type="id" />
+    <item name="cbColds" type="id" />
+    <item name="cbFever" type="id" />
+    <item name="cbSoreThroat" type="id" />
+    <item name="cbLossOfSmell" type="id" />
+    <item name="cbLossOfTaste" type="id" />
+    <item name="cbDiarrhea" type="id" />
+</resources>

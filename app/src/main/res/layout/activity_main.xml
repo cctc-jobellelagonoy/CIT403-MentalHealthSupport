@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:orientation="vertical"
+    android:padding="0dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/leftarrow"
+        android:onClick="goback" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0dp"
+        android:paddingBottom="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="25dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/basic"
+                android:text="@string/start"
+                android:textAlignment="center"
+                android:textColor="#3a3a3a"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:gravity="center_horizontal"
+                android:text="@string/create_aacount"
+                android:textColor="#3a3a3a"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_fullname"
+                style="@android:style/Widget.Material.Light.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/etxt_bg"
+                android:drawableLeft="@drawable/usericon"
+                android:drawablePadding="15dp"
+                android:gravity="left|center_vertical"
+                android:hint="Full Name"
+                android:inputType="text"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_email"
+                style="@android:style/Widget.Material.Light.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/etxt_bg"
+                android:drawableLeft="@drawable/mail"
+                android:drawablePadding="15dp"
+                android:gravity="left|center_vertical"
+                android:hint="Email"
+                android:inputType="text"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_password"
+                style="@android:style/Widget.Material.Light.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/etxt_bg"
+                android:drawableLeft="@drawable/padlock"
+                android:drawablePadding="15dp"
+                android:gravity="left|center_vertical"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spinnerStatus"
+                style="@android:style/Widget.Material.Light.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/spinner_bg"
+                android:entries="@array/status"
+                android:paddingLeft="50dp" />
+
+
+            <Button
+                android:id="@+id/show_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/etxt_bg"
+                android:drawableLeft="@drawable/calendar"
+                android:drawablePadding="15dp"
+                android:gravity="left"
+                android:text="Start of Isolation"
+                android:textColor="@color/blue"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txt_isolationDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/et_Cnumber"
+                style="@android:style/Widget.Material.Light.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/etxt_bg"
+                android:drawableLeft="@drawable/call"
+                android:drawablePadding="15dp"
+                android:gravity="left|center_vertical"
+                android:hint="Contact"
+                android:inputType="number"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/cb_termsandcondition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                android:text="I agree to the Terms of Services and Privacy Policy"
+                android:textColor="@android:color/secondary_text_light"
+                android:textColorHighlight="@color/dark_blue"
+                android:textColorLink="@color/blue" />
+
+            <Button
+                android:id="@+id/signupbtn"
+                style="@android:style/Widget.Material.Light.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btn_bg"
+                android:text="Continue"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/mlogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Have an account? Sign In"
+                android:textSize="15sp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

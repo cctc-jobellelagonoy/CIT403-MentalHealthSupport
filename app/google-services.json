@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "266519966667",
+    "firebase_url": "https://mentalhealthsupport-42617-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "mentalhealthsupport-42617",
+    "storage_bucket": "mentalhealthsupport-42617.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:266519966667:android:a5bd577237894b727b7c4e",
+        "android_client_info": {
+          "package_name": "com.example.mentalhealthsupport"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "266519966667-kqluc62c1uvrjnqt30holrdnnu32r7fg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHRT5eg8N1s8pG1j6QXguhK_M2SUvCwSs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "266519966667-kqluc62c1uvrjnqt30holrdnnu32r7fg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

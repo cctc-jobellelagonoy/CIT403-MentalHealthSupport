@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MentalHealthSupport</string>
+    <array name="status">
+        <item>COVID-19 Patient</item>
+        <item>Health Professional</item>
+    </array>
+    <string name="login_form_title">Login</string>
+    <string name="login_form_username">Email</string>
+    <string name="login_form_password">Password</string>
+    <string name="login_form_login">LOGIN</string>
+    <string name="welcome">Welcome back!</string>
+    <string name="login_back">Login to your account</string>
+    <string name="start">Let Us Get Started!</string>
+    <string name="create_aacount">Create an account to join us</string>
+</resources>
